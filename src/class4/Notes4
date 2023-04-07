@@ -1,0 +1,65 @@
+Git Clone;
+    To clone a project to our computer;
+        1) We write git clone url and enter.
+
+        Git will download the entire repository to your local machine, creating a new directory with the same name as the remote repository.
+
+Git Pull;
+    When we are already working on a project, we can write git pull to get the updates.
+
+Git Branch;
+    We work on branches to not to mess up the main code of the project.
+    By using git branch -M main in this flow, we are creating a new branch named "main" and setting it as the default branch.
+
+    When we clone a new project we need to work on a different branch to not to change the main code. So:
+        1)Clone the project,
+        2)Create a new branch by using "git branch branchName",
+        3)Switch to the branch with "git checkout branchName".
+
+Git Fetch;
+    Git Fetch checks if there is an update on GitHub in any branch. If there is an update, it will tell you the branch name
+    in which there is an update. If there is no update, it will simply print output nothing.
+
+    Git Fetch does not pull/update the code. It just checks.
+
+Caution:
+    When we work on a child branch but if there are errors and we do not want to lose the previous works, we can
+    create a new branch (grandchild branch) and start working there to fix the errors. It is a must to commit the previous work in child branch.
+
+Git Merge;
+    When create a grandchild branch to fix the errors and if we are done with it, we merge it to our child branch where we actually work (not main),
+    we should switch to the child branch we want to merge and use command "git merge branchName".
+
+    If we want to merge our child branch to main, first it is better to push the code to GitHub. So others can check it before
+    merging to main. To do that, we use "git push - origin branchName"
+
+SUMMARY-------------------------------
+    1) Clone the project - git clone
+    2) Open the terminal in location of the repo and confirm the location
+    3) Create a new branch - git branch branchName
+    4) Switch to the new branch - git checkout branchName
+    5) Work on your child branch and do you commits while working. When you are done with it,
+    6) Go to parent branch - git checkout parentBranch
+    7) Merge the child into parent - git merge childBranch
+
+NOTES/WARNINGS------------------------
+    1) Before switching branch, check your current branch.
+    2) Before creating a new branch, make sure that you are on the correct branch that you want to create a new one from.
+    3) Before merging, make sure that you are on the parent branch.
+    4) Whenever you are switching branch, make sure that there is no change that is not committed on that branch.
+
+Pull Request;
+    We open a pull request to let the team lead know that we updated the code.
+
+    1) Click on "Pull Request",
+    2) Select the base branch (branch that we want to merge),
+    3) Select compare (branch we want to merge from),
+    4) Click on "Create Pull Request",
+    5) Add comments, assignees etc,
+    6) Create pull request
+
+    If we want to update our main branch after team lead solves the pull request, simply navigate to main branch and pull.
+
+Caution:
+    Pull requests must be solved by team lead only !!!
+

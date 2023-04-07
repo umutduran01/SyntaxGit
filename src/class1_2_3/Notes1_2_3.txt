@@ -1,0 +1,24 @@
+Git workflow;
+    1.	Open GitBash and navigate it to correct folder. The most correct folder to create a repository is project folder.
+    2.	To check if the existing location, use pwd
+    3.	To see what folders are in the existing folder, use ls
+    4.	To create a new file, use mkdir “file name”
+    5.	To open a folder in GitBash, use cd “file name”
+    6.	To come to the previous file, use cd ..
+    7.	To create a local repository, use git init
+    8.	To add all files to stating, use git add .
+    9.	To see the current status, use git status
+    10.	To save the changes in repository, use git commit -m “message”
+    11.	Go to GitHub and create a new repository.
+    12.	To connect remote repository to local one, use git remote add origin URL
+    13.	If a wrong repo is added, use git remote remove origin
+    14.	To check if the remote repo is connected to local repo, use git remote -v
+    15.	git branch -M main
+    16.	To send files to remote repo for the first time, use git push -u origin main
+    17.	To see previous commits, use git log
+    18.	To clone a project from GitHub, use git clone “project link”
+    19.	To receive updates of the cloned project, use git pull
+
+After the first push we can use only git push in stead of git push -u origin main.
+It is better to use git add . for all stating process. Stating is a temporary saving before the files are pushed to remote repo.
+To see the existing GIT version, git --version is used.
