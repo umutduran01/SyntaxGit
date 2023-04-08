@@ -1,0 +1,39 @@
+git branch -a;
+    We can use this code to see the available branches on remote repo. When we simply switch to the branch, it will be
+    downloaded.
+
+Merging on Local;
+    Whenever we want to merge branches on main on local first:
+        1) Switch to main branch,
+        2) Then use "git merge branchName"
+
+Merge Conflicts;
+    This happens when two or more people work on the same file and edit the same line of code.
+
+Types of Merging;
+    1) Fast Forward Merge:
+    2) Recursive/3way Merge:
+
+Vim Editor;
+    It is going to open up if there is no merge conflict. It will ask you to put a commit message for your merge commit.
+    In order to insert:
+        1) Esc then i
+        2) Enter commit message
+    In order to save and exit:
+        1) Esc and then :wq
+        2) Press enter
+
+Git Ignore;
+    If we do not want to push some specific folder, we cna use git ignore. To use it;
+        1) Navigate the terminal,
+        2) Start repo - git init
+        3) Use command touch .gitignore
+        4) Go to the file and "type fileName/"
+
+        Mostly Mac users use it to not to have an issue with ds_store file.
+
+Git Stash;
+    We can undo the uncommitted code and save in memory. When needed we can bring back.
+        1) git stash -m "message" - to undo
+        2) git stash list - what undo's are in the memory
+        3) git stash apply indexNumber - bring back
