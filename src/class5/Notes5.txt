@@ -1,0 +1,25 @@
+General Summary of Workflow;
+
+    First time creating the code;
+        1) Create code
+        2) Commit it in local
+        3) Push it to GitHub
+
+    New person works on a feature;
+        1) Clone
+        2) Create a new branch
+        3) Change the code
+        4) Commit
+
+        At this step, team lead may ask you to merge on local or on GitHub. If it is on GitGub;
+
+        5) Push the branch to GitHub
+        6) Open a pull request
+        7) Merge the code on GitHub
+
+        Once we merge the code on GitHub, we'll need the code on local as well.
+
+        8) Switch to main
+        9) Git fetch to check the updates
+        10) Git pull to get the updates
+

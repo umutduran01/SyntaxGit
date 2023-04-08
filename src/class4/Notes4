@@ -27,7 +27,7 @@ Caution:
     create a new branch (grandchild branch) and start working there to fix the errors. It is a must to commit the previous work in child branch.
 
 Git Merge;
-    When create a grandchild branch to fix the errors and if we are done with it, we merge it to our child branch where we actually work (not main),
+    When we create a grandchild branch to fix the errors and if we are done with it, we merge it to our child branch where we actually work (not main),
     we should switch to the child branch we want to merge and use command "git merge branchName".
 
     If we want to merge our child branch to main, first it is better to push the code to GitHub. So others can check it before
